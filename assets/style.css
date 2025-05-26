@@ -1,20 +1,29 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-.conteudo{
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.navbar {
+    background-color: #F5F5F5;
+}
+
+.conteudo {
     padding: 0 20%;
 }
 
-.container-card{
+.container-card {
     width: 100%;
     height: max-content;
     display: flex;
     justify-content: space-between;
 }
 
-.img-icone{
+.img-icone {
     width: 200px;
     height: 200px;
     border: 2px solid grey;
@@ -25,15 +34,62 @@
     margin: 0 auto;
 }
 
-.card{
-    border: 1px solid grey;
-    width: 30%;
-    border-radius: 25px;
-    display: inline-table;
-    text-align: center;
-    padding: 12px;
+
+/* Cartão da Sala */
+.rooms-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+    gap: 10px;
 }
 
+.room-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 225px;
+}
 
+.room-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
 
+.room-card h2 {
+    font-size: 18px;
+    margin-bottom: 0
+}
 
+.room-card .room-image {
+    width: 100%;
+    max-width: 150px;
+    margin: 0;
+}
+
+.room-card p {
+    font-size: 14px;
+    color: #666;
+    padding: 5px;
+    margin: 0 0 0 0;
+}
+
+/* Footer styles */
+footer {
+    display: flex;
+    justify-content: center;
+    gap: 300px;
+    text-wrap: nowrap;
+    background-color: #F5F5F5;
+    color: black;
+    width: 100%;
+    padding: 100px;
+    height: max-content;
+    font-size: calc(8px + 0.25vw);
+}
+
+footer span{
+    position: absolute;
+    margin-top: 200px;
+}
