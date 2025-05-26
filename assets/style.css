@@ -33,7 +33,9 @@ body {
     display: block;
     margin: 0 auto;
 }
-
+.img-about{
+    width: 25vw;
+}
 
 /* Cartão da Sala */
 .rooms-container {
@@ -92,4 +94,10 @@ footer {
 footer span{
     position: absolute;
     margin-top: 200px;
+    font-size: 13px;
+}
+
+footer ul, footer a, footer p{
+    list-style: none;
+    font-size: 13px;
 }
