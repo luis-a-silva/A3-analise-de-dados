@@ -6,7 +6,7 @@
     <link rel="shortcut icon" href="assets/imgs/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="/assets/style.css">
     <title>PortData Analytics</title>
 </head>
 <body>
@@ -67,75 +67,89 @@
         </div>
     </div>
     <div class="conteudo">
+       
         <section class="section equipe">
             <div class="row align-items-center">
                 <div class="col-md-6 section-media">
-                    <iframe width="100%" height="500px" src="https://www.youtube.com/embed/EpBUwrRNrqA?si=mRfmzjydWi_UeyvR"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="video-container">
+                        <iframe width="100%" height="500px" src="https://www.youtube.com/embed/EpBUwrRNrqA?si=mRfmzjydWi_UeyvR"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
                 </div>
-                <div class="col-md-6 section-content">
-                    <h2>Nossa Equipe</h2>
-                    <p>
-                        Somos a PortData Analytics, uma empresa apaixonada por transformar dados brutos em soluções estratégicas. Com mais de 10 anos de experiência em análise e inteligência de dados para operações portuárias, nosso time é liderado por especialistas como Daniel Souza (Cientista de Dados Sênior), Mariana Costa (Engenheira de Dados) e Ricardo Lima (Analista de BI). Juntos, acumulamos décadas de expertise em logística portuária.
+                <div class="col-md-6 section-content spaced-content">
+                    <h2 class="pulse-title text-center">Nossa Equipe</h2>
+                    <p class="fade-in-text delay-1 text-justify compact-text">
+                        Somos a PortData Analytics, uma empresa apaixonada por transformar dados brutos em soluções estratégicas. Nosso time, liderado por especialistas como Daniel Souza (Cientista de Dados Sênior), Mariana Costa (Engenheira de Dados) e Ricardo Lima (Analista de BI), acumula décadas de expertise em logística portuária.
                     </p>
-                    <p>
-                        Nossa missão é clara: aumentar a eficiência, reduzir custos e potencializar resultados através de soluções personalizadas, desde a coleta de dados até dashboards interativos e análises preditivas. Já ajudamos dezenas de empresas a otimizar processos, identificar gargalos e tomar decisões assertivas com transparência e precisão.
+                    <p class="fade-in-text delay-1 text-justify compact-text">
+                        Nossa missão é aumentar a eficiência e reduzir custos com soluções personalizadas, desde a coleta de dados até dashboards interativos. Já ajudamos dezenas de empresas a otimizar processos e tomar decisões assertivas.
                     </p>
-                    <a href="#" class="btn btn-primary">Conheça Nossa Equipe</a>
+                    <div class="button-container">
+                        <a href="#" class="btn btn-primary btn-animated">Conheça Nossa Equipe</a>
+                    </div>
                 </div>
             </div>
         </section>
+
+
         <section class="section portos">
-            <div class="row align-items-center">
-                <div class="col-md-6 order-md-2 section-media">
-                    <img class="img-about" src="assets/imgs/portos-brasileiros.jpg" alt="Portos brasileiros">
+            <div class="row align-items-center flex-row-reverse">
+                <div class="col-md-6 section-media">
+                    <div class="image-overlay">
+                        <img class="img-about img-full-width" src="assets/imgs/portos-brasileiros.jpg" alt="Portos brasileiros">
+                    </div>
                 </div>
-                <div class="col-md-6 order-md-1 section-content">
-                    <h2>Sobre os Portos</h2>
-                    <p>
-                        Os portos são o coração do comércio global, movimentando 90% das mercadorias pelo transporte marítimo. No Brasil, mais de 1,2 bilhão de toneladas de cargas passam pelos portos anualmente, impulsionando a economia e conectando mercados internacionais.
+                <div class="col-md-6 section-content spaced-content">
+                    <h2 class="pulse-title text-center">Sobre os Portos</h2>
+                    <p class="slide-up-text delay-1 text-justify compact-text">
+                        Os portos movimentam 90% das mercadorias globais via transporte marítimo. No Brasil, mais de 1,2 bilhão de toneladas de cargas passam por eles anualmente, conectando mercados e impulsionando a economia.
                     </p>
-                    <p>
-                        Com dados precisos, empresas podem otimizar operações, reduzir desperdícios e antecipar desafios logísticos. Na PortData Analytics, transformamos informações em estratégias que maximizam resultados e fortalecem a competitividade no setor portuário.
+                    <p class="slide-up-text delay-1 text-justify compact-text">
+                        Com dados precisos, otimizamos operações e antecipamos desafios logísticos. Transformamos informações em estratégias que maximizam resultados no setor portuário.
                     </p>
-                    <a href="#" class="btn btn-primary">Saiba Mais</a>
+                    <div class="button-container">
+                        <a href="#" class="btn btn-primary btn-animated">Saiba Mais</a>
+                    </div>
                 </div>
             </div>
         </section>
+
+    
         <section class="section dashboards">
             <div class="row align-items-center">
                 <div class="col-md-6 section-media">
-                    <img class="img-about" src="assets/imgs/power-bi-dashboard2.png" alt="Dashboard Power BI da Microsoft">
+                    <div class="dashboard-frame">
+                        <img class="img-about img-full-width" src="assets/imgs/power-bi-dashboard2.png" alt="Dashboard Power BI da Microsoft">
+                    </div>
                 </div>
-                <div class="col-md-6 section-content">
-                    <h2>Dashboards Inteligentes</h2>
-                    <p>
-                        Nossos dashboards transformam dados complexos em visualizações claras e interativas, permitindo que gestores identifiquem gargalos, monitorem indicadores-chave e tomem decisões rápidas. Com análises preditivas, você não apenas entende o presente, mas também planeja o futuro com confiança.
+                <div class="col-md-6 section-content spaced-content">
+                    <h2 class="pulse-title text-center">Dashboards Inteligentes</h2>
+                    <p class="zoom-in-text delay-1 text-justify compact-text">
+                        Transformamos dados complexos em visualizações interativas para identificar gargalos e monitorar indicadores-chave, com análises preditivas que planejam o futuro.
                     </p>
-                    <p>
-                        Oferecemos uma visão 360° das operações, com dados em tempo real que impulsionam o crescimento sustentável e a eficiência operacional.
+                    <p class="zoom-in-text delay-1 text-justify compact-text">
+                        Oferecemos uma visão 360° em tempo real, impulsionando crescimento sustentável e eficiência operacional.
                     </p>
-                    <a href="#" class="btn btn-primary">Explore Nossos Dashboards</a>
+                    <div class="button-container">
+                        <a href="#" class="btn btn-primary btn-animated">Explore Nossos Dashboards</a>
+                    </div>
                 </div>
             </div>
         </section>
+
         <section class="main-content-cards">
             <div class="rooms-container">
                 <div class="room-card">
                     <i class="fas fa-chart-line fa-3x card-icon"></i>
                     <h3>Análise de Dados</h3>
-                    <p>Identifique tendências, otimize recursos e melhore o fluxo logístico com decisões rápidas, precisas e seguras, reduzindo custos e aumentando a lucratividade. A análise de dados oferece uma vantagem competitiva essencial, permitindo que empresas do setor portuário identifiquem tendências, otimizem recursos e melhorem o fluxo logístico. Com dados bem estruturados, as decisões se tornam mais rápidas, precisas e seguras, resultando em redução de custos, aumento de produtividade e maior lucratividade.
-
-
-
-                    </p>
+                    <p>Identifique tendências, otimize recursos e melhore o fluxo logístico com decisões rápidas, precisas e seguras, reduzindo custos e aumentando a lucratividade. A análise de dados oferece uma vantagem competitiva essencial, permitindo que empresas do setor portuário identifiquem tendências, otimizem recursos e melhorem o fluxo logístico. Com dados bem estruturados, as decisões se tornam mais rápidas, precisas e seguras, resultando em redução de custos, aumento de produtividade e maior lucratividade.</p>
                 </div>
                 <div class="room-card">
                     <i class="fas fa-rocket fa-3x card-icon"></i>
                     <h3>Nossos Projetos</h3>
-                    <p>Apoiamos empresas como a MarLog Transportes, que reduziu 22% dos custos logísticos com nossa solução de monitoramento em tempo real, e a BluePort Solutions, que otimizou a gestão dos terminais portuários, reduzindo o tempo de espera das embarcações em 18%, impulsionando sua produtividade. </p>
+                    <p>Apoiamos empresas como a MarLog Transportes, que reduziu 22% dos custos logísticos com nossa solução de monitoramento em tempo real, e a BluePort Solutions, que otimizou a gestão dos terminais portuários, reduzindo o tempo de espera das embarcações em 18%, impulsionando sua produtividade.</p>
                 </div>
                 <div class="room-card">
                     <i class="fas fa-trophy fa-3x card-icon"></i>
@@ -151,39 +165,41 @@
         </section>
     </div>
     <footer class="footer">
-        <div class="footer-wave"></div>
-        <div class="footer-content">
-            <div class="footer-section" data-animate="fade-in" data-delay="0s">
-                <h3>Links Rápidos</h3>
-                <ul>
-                    <li><a href="#">Sobre Nós</a></li>
-                    <li><a href="#">Serviços</a></li>
-                    <li><a href="#">Contato</a></li>
-                    <li><a href="#">Política de Privacidade</a></li>
-                    <li><a href="#">Termos de Uso</a></li>
-                </ul>
-            </div>
-            <div class="footer-section" data-animate="fade-in" data-delay="0.2s">
-                <h3>Contato</h3>
-                <p><i class="fas fa-phone icon"></i> (71) 99999-9999</p>
-                <p><i class="fas fa-envelope icon"></i> contato@empresa.com</p>
-                <p><i class="fas fa-map-marker-alt icon"></i> Rua Exemplo, 123 - Salvador - BA</p>
-            </div>
-            <div class="footer-section" data-animate="fade-in" data-delay="0.4s">
-                <h3>Redes Sociais</h3>
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-facebook-f icon"></i> Facebook</a>
-                    <a href="#"><i class="fab fa-instagram icon"></i> Instagram</a>
-                    <a href="#"><i class="fab fa-x-twitter icon"></i> Twitter</a>
-                    <a href="#"><i class="fab fa-linkedin-in icon"></i> LinkedIn</a>
-                    <a href="#"><i class="fab fa-youtube icon"></i> YouTube</a>
-                </div>
-            </div>
+    <div class="footer-wave"></div>
+    <div class="footer-content">
+        <div class="footer-section" data-animate="fade-in" data-delay="0s">
+            <h3>Links Rápidos</h3>
+            <ul>
+                <li><a href="#">Sobre Nós</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Política de Privacidade</a></li>
+                <li><a href="#">Termos de Uso</a></li>
+            </ul>
         </div>
-        <div class="footer-bottom">
-            <span>© 2025 PortData Analytics. Todos os direitos reservados.</span>
+        <div class="footer-section" data-animate="fade-in" data-delay="0.2s">
+            <h3>Contato</h3>
+            <ul>
+                <li><p><i class="fas fa-phone icon"></i> (71) 99999-9999</p></li>
+                <li><p><i class="fas fa-envelope icon"></i> contato@empresa.com</p></li>
+                <li><p><i class="fas fa-map-marker-alt icon"></i> Rua Exemplo, 123 - Salvador - BA</p></li>
+            </ul>
         </div>
-    </footer>
+        <div class="footer-section" data-animate="fade-in" data-delay="0.4s">
+            <h3>Redes Sociais</h3>
+            <ul class="social-links">
+                <li><a href="#"><i class="fab fa-facebook-f icon"></i> Facebook</a></li>
+                <li><a href="#"><i class="fab fa-instagram icon"></i> Instagram</a></li>
+                <li><a href="#"><i class="fab fa-x-twitter icon"></i> Twitter</a></li>
+                <li><a href="#"><i class="fab fa-linkedin-in icon"></i> LinkedIn</a></li>
+                <li><a href="#"><i class="fab fa-youtube icon"></i> YouTube</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <span>© 2025 PortData Analytics. Todos os direitos reservados.</span>
+    </div>
+</footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
