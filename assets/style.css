@@ -46,7 +46,8 @@ body {
     transition: width 0.3s ease;
 }
 
-.nav-link:hover::after, .nav-link.active::after {
+.nav-link:hover::after,
+.nav-link.active::after {
     width: 100%;
 }
 
@@ -222,34 +223,73 @@ body {
 }
 
 @keyframes fadeInUp {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes slideUp {
-    from { transform: translateY(30px); opacity: 0; }
-    to { transform: translateY(0); opacity: 1; }
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 @keyframes zoomIn {
-    from { transform: scale(0.9); opacity: 0; }
-    to { transform: scale(1); opacity: 1; }
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
 @keyframes gradientShift {
-    from { background-position: 0%; }
-    to { background-position: 100%; }
+    from {
+        background-position: 0%;
+    }
+
+    to {
+        background-position: 100%;
+    }
 }
 
 @keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.05); }
-    100% { transform: scale(1); }
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
 
 .rooms-container {
@@ -321,8 +361,13 @@ body {
 }
 
 @keyframes wave {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .footer-content {
@@ -347,7 +392,7 @@ body {
 .footer-section h3 {
     font-size: 1.3rem;
     margin-bottom: 1.5rem;
-    position:  relative;
+    position: relative;
     color: #dbeafe;
 }
 
@@ -429,7 +474,8 @@ body {
         padding: 1rem;
     }
 
-    .section-media iframe, .section-media img {
+    .section-media iframe,
+    .section-media img {
         max-width: 100%;
     }
 
@@ -465,11 +511,74 @@ body {
 }
 
 .img-about {
-   width: 100px;
+    width: 100px;
 }
 
 .img-full-width {
     width: 100%;
     height: auto;
     object-fit: cover;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.btn-card {
+    background-color: #0077ff;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 16px;
+    position: relative;
+    transform: skewX(-15deg);
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+.btn-card span {
+    display: inline-block;
+    transform: skewX(15deg);
+}
+
+.btn-card:hover {
+    background-color: #005fcc;
+}
+
+.card {
+    border: none;
+    border-radius: 20px;
+    padding: 25px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    display: none;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 360px;
+    height: 360px;
+    border-radius: 15px;
+    object-fit: cover;
+    margin: 15px 0;
+}
+
+.card h2 {
+    margin: 0;
+    font-weight: 400;
+}
+
+.card h2 span {
+    font-weight: bold;
+}
+
+.card p {
+    font-size: 18px;
+    color: #333;
 }
